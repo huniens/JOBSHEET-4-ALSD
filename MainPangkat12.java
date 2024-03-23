@@ -19,15 +19,28 @@ public class MainPangkat12 {
         }
 
         System.out.println("=====================================================");
-        System.out.println("Hasil Pangkat dengan Brute Force");
-        for (int i = 0; i < elemen; i++) {
-            System.out.println("Nilai "+png[i].nilai+" pangkat "+png[i].pangkat+" adalah : "+png[i].pangkatBF(png[i].nilai,png[i].pangkat));
-        }
+        System.out.println("1. Hasil Pangkat dengan Brute Force");
+        System.out.println("2. Hasil Pangkat dengan Divide and Conquer");
+        System.out.print("Masukkan pilihan Anda: ");
+        int pilihan = input12.nextInt();
 
-        System.out.println("=====================================================");
-        System.out.println("Hasil Pangkat dengan Divide and Conquer");
-        for (int i = 0; i < elemen; i++) {
-            System.out.println("Nilai "+png[i].nilai+" pangkat "+png[i].pangkat+" adalah : "+png[i].pangkatDC(png[i].nilai,png[i].pangkat));
+        switch(pilihan) {
+            case 1:
+                System.out.println("=====================================================");
+                System.out.println("Hasil Pangkat dengan Brute Force");
+                for (int i = 0; i < elemen; i++) {
+                    System.out.println("Nilai "+png[i].nilai+" pangkat "+png[i].pangkat+" adalah : "+png[i].pangkatBF(png[i].nilai,png[i].pangkat));
+                }
+                break;
+            case 2:
+                System.out.println("=====================================================");
+                System.out.println("Hasil Pangkat dengan Divide and Conquer");
+                for (int i = 0; i < elemen; i++) {
+                    System.out.println("Nilai "+png[i].nilai+" pangkat "+png[i].pangkat+" adalah : "+png[i].pangkatDC(png[i].nilai,png[i].pangkat));
+                }
+                break;
+            default:
+                System.out.println("Pilihan tidak valid.");
         }
 
         System.out.println("=====================================================");
