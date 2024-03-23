@@ -3,6 +3,10 @@ import java.util.Scanner;
 public class MainFaktorial12 {
     public static void main(String[] args) {
         Scanner input12 = new Scanner(System.in);
+
+        long awal = System.currentTimeMillis();
+        
+        System.out.println("Waktu awal : "+ String.valueOf(awal)+" milidetik");
         System.out.println("=====================================================");
         System.out.print("Masukkan jumlah elemen yang ingin dihitung : ");
         int elemen = input12.nextInt();
@@ -26,5 +30,11 @@ public class MainFaktorial12 {
         System.out.println("=====================================================");
         
         input12.close(); // Menutup scanner setelah penggunaan selesai
+
+        long akhir = System.currentTimeMillis();
+        System.out.println("Waktu Akhir\t: "+ String.valueOf(akhir)+" milidetik");
+
+        long elapsTime = akhir-awal;
+        System.out.println("Interval Waktu\t: "+ String.valueOf(elapsTime)+ " milidetik");
     }
 }
