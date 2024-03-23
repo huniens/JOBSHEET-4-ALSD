@@ -1,10 +1,11 @@
-/**
- * classPangkat12
- */
 public class classPangkat12 {
-
     public int nilai,pangkat;
 
+    public classPangkat12(int n, int p) {
+        nilai = n;
+        pangkat = p;
+    }
+    
     public int pangkatBF(int a,int n) {
         int hasil = 1;
         for (int i = 0; i < n; i++) {
